@@ -65,7 +65,16 @@ map1
 
 # Det vi kan se på kartet som viser arbeidsledighet i Europa er at det er 
 # større arbeidsledighet i sør-Europa enn i nord. Det skyldes blant annet at 
-# Nord-Norge har større andel offentlige ansatte som ikke rammes av            # permitteringer, som f.eks under corona-pandemien. En annen grunn til lav     # arbeidsledighet oppe i nord er at NAV kjører flere tiltak gjennom kjappe kurs # og sertifikater for å få folk raskt utdannet og ut i arbeidsmarkedet. De     # jobber også med å gi ungdom mer langsiktig utdannelse, gjennom videregående  # skole og fagbrev. Myndighetene kan påvirke arbeidsledigheten gjennom         # stabiliseringspolitikk. Ved høy ledighet kan de stimulere økonomien gjennom  # en ekspansiv finanspolitikk altså øke offentlige utgifter eller reduserer    # skatter og avgifter for å stimulere økonomien under en lavkonjunktur, for    # eksempel ved å øke offentlig forbruk eller ved å gi skattelette.
+# Nord-Norge har større andel offentlige ansatte som ikke rammes av
+# permitteringer, som f.eks under corona-pandemien. En annen grunn til lav
+# arbeidsledighet oppe i nord er at NAV kjører flere tiltak gjennom kjappe kurs
+# og sertifikater for å få folk raskt utdannet og ut i arbeidsmarkedet. De
+# jobber også med å gi ungdom mer langsiktig utdannelse, gjennom videregående
+# skole og fagbrev. Myndighetene kan påvirke arbeidsledigheten gjennom
+# stabiliseringspolitikk. Ved høy ledighet kan de stimulere økonomien gjennom
+# en ekspansiv finanspolitikk altså øke offentlige utgifter eller reduserer
+# skatter og avgifter for å stimulere økonomien under en lavkonjunktur, for
+# eksempel ved å øke offentlig forbruk eller ved å gi skattelette.
 
 
 
@@ -90,11 +99,17 @@ map2 <- ggplot(mapdata2, aes(x = long, y = lat, group = group)) +
         rect = element_blank())
 map2
 
-# Nå har vi sett på arbeidsledighetsraten i de ulike landene i Europa og nå    # skal vi se på fagforeningsdensitet. 
-# En fagforening er en sammenslutning av arbeidstakere innen samme yrkesgruppe. # Deres fremste oppgaver er å kjempe for bedre lønn og gode arbeidsvilkår.
-# Det vi kan se på kartet er at det er stor fagforeningsdensitet i nord europa, # spesielt i island. I den europeiske unionen (EU) er fagforeninger sterkere i # offentligheten enn i privat sektor.
+# Nå har vi sett på arbeidsledighetsraten i de ulike landene i Europa og nå
+# skal vi se på fagforeningsdensitet. 
+# En fagforening er en sammenslutning av arbeidstakere innen samme yrkesgruppe.
+# Deres fremste oppgaver er å kjempe for bedre lønn og gode arbeidsvilkår.
+# Det vi kan se på kartet er at det er stor fagforeningsdensitet i nord europa,
+# spesielt i island. I den europeiske unionen (EU) er fagforeninger sterkere i
+# offentligheten enn i privat sektor.
 
-# Vi kan se en klar sammenheng mellom arbeidsledighet (map1) og                # fagforeningsdensitet (map2). Altså at land med gode fagforeninger har lavere # arbeidsledighet en land uten. 
+# Vi kan se en klar sammenheng mellom arbeidsledighet (map1) og
+# fagforeningsdensitet (map2). Altså at land med gode fagforeninger har lavere
+# arbeidsledighet en land uten. 
 
 
 
@@ -119,8 +134,15 @@ map3 <- ggplot(mapdata3, aes(x = long, y = lat, group = group)) +
         rect = element_blank())
 map3
 
-# Kartet viser hvor stor andel av arbeidskraften som dekkes av kollektive      # forhandlinger. Landene som er dekket med grå har NA verdier, altså manglende # verdier. "(De er med i kartet kun pga at det så vissuelt dårlig ut å fjerne  # dem helt"). 
-# Vi kan altså se at Norge har manglende verider og er grå. Kollektive         # forhandlinger er forhandlingsprosesser mellom arbeidsgivere og en gruppe     # arbeidstakere som tar sikte på avtaler for å regulere arbeidslønn,           # arbeidsvilkår, fordeler osv. for arbeidstakere. I Norge er det stor kollektiv # forhandling mellom arbeidsgivere og arbeidstakere.
+# Kartet viser hvor stor andel av arbeidskraften som dekkes av kollektive
+# forhandlinger. Landene som er dekket med grå har NA verdier, altså manglende
+# verdier. "(De er med i kartet kun pga at det så vissuelt dårlig ut å fjerne
+# dem helt"). 
+# Vi kan altså se at Norge har manglende verider og er grå. Kollektive
+# forhandlinger er forhandlingsprosesser mellom arbeidsgivere og en gruppe
+# arbeidstakere som tar sikte på avtaler for å regulere arbeidslønn,
+# arbeidsvilkår, fordeler osv. for arbeidstakere. I Norge er det stor kollektiv
+# forhandling mellom arbeidsgivere og arbeidstakere.
 
 # Plot 4
 mapdata4 <- mapdata2
@@ -138,9 +160,17 @@ map4 <- ggplot(mapdata4, aes(x = long, y = lat, group = group)) +
         rect = element_blank())
 map4
 
-# På kartet kan vi se koordinering av lønnsfastsettelse. 1. Det grønne viser   # fragmenterte lønnsforhandlinger, 2. gult viser noe koordinering, 3. lys lilla # viser prosedyreretningslinjer for forhandling, 4. oransje viser ikke-bindene # nasjonale normer og 5. blå viser bindene-nasjonale normer. 1. Fragmentere    # betyr å brekke opp, splitte eller dele i små stykker, som vil si at          # fragmenterte lønnsforhandlinger er lønnsforhandlinger delt opp i mindre      # stykker. 2. Betyr noe kordinasjon, 3. prosedyreretningslinjer for forhandling # , 4. ikke bindende nasjonale normer og 5. bindene nasjonale normer.
+# På kartet kan vi se koordinering av lønnsfastsettelse. 1. Det grønne viser
+# fragmenterte lønnsforhandlinger, 2. gult viser noe koordinering, 3. lys lilla
+# viser prosedyreretningslinjer for forhandling, 4. oransje viser ikke-bindene
+# nasjonale normer og 5. blå viser bindene-nasjonale normer. 1. Fragmentere
+# betyr å brekke opp, splitte eller dele i små stykker, som vil si at
+# fragmenterte lønnsforhandlinger er lønnsforhandlinger delt opp i mindre
+# stykker. 2. Betyr noe kordinasjon, 3. prosedyreretningslinjer for forhandling
+# , 4. ikke bindende nasjonale normer og 5. bindene nasjonale normer.
 
-# Man kan si det slik at tallene sier noe om lønnsforhanlding, fra 1-5, hvor 1 # er "litt lønnsforhandling" til 5 som er stor lønnsforhandling.
+# Man kan si det slik at tallene sier noe om lønnsforhanlding, fra 1-5, hvor 1
+# er "litt lønnsforhandling" til 5 som er stor lønnsforhandling.
 
 
 
